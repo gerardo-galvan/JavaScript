@@ -1,4 +1,3 @@
-// Write your function here:
 const finalGrade  = (midterm, final, homework) => {
   
     if ((midterm < 0 || midterm > 100) || (final < 0 || final > 100) || (homework < 0 || homework > 100))  {
