@@ -7,10 +7,10 @@ let vowels = ['a', 'e','i','o','u'];
 let resultArray = [];
 
 // a loop that iterates through each letter in input
-for(i=0; i < input.length; i++){
+for(let i=0; i < input.length; i++){
 
   // As you loop through the input, iterate through the vowels array
-    for(v=0; v < vowels.length; v++){  
+    for(let v=0; v < vowels.length; v++){  
     // if the input and vowel match, push to resultsArray
       if(input[i] === vowels[v]) {     
       resultArray.push(input[i]);
