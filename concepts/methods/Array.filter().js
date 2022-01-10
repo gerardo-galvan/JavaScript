@@ -7,6 +7,7 @@ const words = ['chair', 'music', 'pillow', 'brick', 'pen', 'door'];
 /* The callback function is an arrow function that has a single parameter, word. 
 Each element in the words array will be passed to this function as an argument. */
 
+// .filter() on an existing array returns a new array.
 const shortWords = words.filter(word => {
 
 
