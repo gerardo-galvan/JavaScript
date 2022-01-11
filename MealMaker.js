@@ -27,7 +27,7 @@ const menu = {
       appetizers: this.appetizers,
       mains: this.mains,
       desserts: this.desserts
-    };
+    }
   },
 
 addDishToCourse (courseName, dishName, dishPrice) {
