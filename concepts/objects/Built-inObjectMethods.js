@@ -16,7 +16,7 @@ const robotEntries = Object.entries(robot);
 
 console.log(robotEntries);
 
-// Declare newRobot below this line:
+// Copy all of the properties of an object into a new object. Declare newRobot below this line:
 const newRobot = Object.assign({laserBlaster: true, voiceRecognition: true},robot) ;
 
 console.log(newRobot);

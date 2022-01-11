@@ -49,7 +49,8 @@ let team = {
   team.addPlayer('Steph', 'Curry', 28);
   team.addPlayer('Lisa', 'Leslie', 44);
   team.addGame('day',55,40);
-  
-  console.log(team.players);
-  console.log(team.games);
+
+
+team.players();
+team.games();
   
