@@ -81,6 +81,37 @@ inRange (number, start, end) {
     undefined
     return undefined;
     },
+
+
+drop (arr, n) {
+    if(n === undefined) {
+      n = 1;
+    }
+    let droppedArray = arr.slice(n, arr.length);
+    return droppedArray; 
+  },
+  
+  dropWhile (arr, predicate) {
+      const callback_function = (element, index) =>{
+        return !predicate(element,index, arr);
+      }
+      let dropNumber = arr.findIndex(callback_function);
+      let droppedArray = this.drop(arr,dropNumber);
+      return droppedArray;
+  },
+  
+  
+  chunk (arr, size=1) {
+  
+    let arrayChunks = [];
+  
+    for(let i=0; i<arr.length; i += size) {
+      let arrayChunk = arr.slice(i, i+size);
+      arrayChunks.push(arrayChunk);
+    }
+    return arrayChunks;
+  
+  },
     
     };
     
